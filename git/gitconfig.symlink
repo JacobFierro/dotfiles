@@ -1,6 +1,6 @@
 [user]
-	name = Joel Gillman
-	email = joeltgillman@gmail.com
+	name = Jacob Fierro
+	email = jacob.fierro@gmail.com
 
 [alias]
 	st = status
@@ -28,4 +28,4 @@
 	editor = vim
 
 [github]
-	user = jgillman
+	user = JacobFierro
