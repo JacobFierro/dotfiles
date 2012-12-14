@@ -11,3 +11,8 @@ export MANPAGER="less -X"
 export LESS_TERMCAP_md="$ORANGE"
 
 export LESS=-RFX
+
+# Set the memory size for java and grails
+export JAVA_OPTS='-XX:MaxPermSize=512m -XX:PermSize=512m -Xms256m -Xmx1024m -XX:-UseGCOverheadLimit'
+export GRAILS_OPTS="-server -Xmx512M -XX:MaxPermSize=512m -Dfile.encoding=UTF-8"
+

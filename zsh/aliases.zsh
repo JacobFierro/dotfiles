@@ -22,3 +22,13 @@ alias showdesktop"defaults write com.apple.finder CreateDesktop -bool true && ki
 alias stfu="osascript -e 'set volume output muted true'"
 alias pumpitup="osascript -e 'set volume 10'"
 alias hax="growlnotify -a 'Activity Monitor' 'System error' -m 'WTF R U DOIN'"
+
+# Some shortcuts to commonly used places
+alias desk="cd ~/Desktop/"
+alias webdocs="cd /Library/WebServer/Documents/"
+alias work="cd ~/Documents/Work/"
+alias repos="cd ~/Repos/"
+alias portlouis="ssh jfierro@portlouis.edge.sefaira.com"
+
+# Aliases for things I don't want autocorrected 
+alias grails="nocorrect grails"
