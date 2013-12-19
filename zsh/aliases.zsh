@@ -28,7 +28,6 @@ alias desk="cd ~/Desktop/"
 alias webdocs="cd /Library/WebServer/Documents/"
 alias work="cd ~/Documents/Work/"
 alias repos="cd ~/Repos/"
-alias portlouis="ssh jfierro@portlouis.edge.sefaira.com"
 
-# Aliases for things I don't want autocorrected 
-alias grails="nocorrect grails"
+alias sails="nocorrect sails"
+
