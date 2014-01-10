@@ -1,4 +1,4 @@
-# jgillman's sepcial dotfiles
+# My Configs
 
 ## Shoutout
 
