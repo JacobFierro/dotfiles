@@ -1,5 +1,4 @@
 alias reload!='. ~/.zshrc'
-
 alias ..="cd .."
 alias ...="cd ../.."
 alias la="ls -A"
@@ -30,4 +29,12 @@ alias work="cd ~/Documents/Work/"
 alias repos="cd ~/Repos/"
 
 alias sails="nocorrect sails"
+alias cinplayer="cd ~/Documents/Work/cinematique/cinematique-player/"
+
+alias vact="source bin/activate"
+alias de="deactivate; cd ~"
+
+alias cindev="cd ~/Documents/Work/cinematique/cinematique-env"
+alias cin="cindev; vact; cd cinematique"
+alias cinsass="cin; ; cd cinematique/static_local/app/css; compass watch ."
 
