@@ -40,14 +40,14 @@ need_push () {
   fi
 }
 
-rb_prompt(){
-	if $(which rbenv &> /dev/null)
-	then
-		echo "%{$fg[yellow]%}$(rbenv version | awk '{print $1}')%{$reset_color%}"
-	else
-		echo "%m"
-	fi
-}
+#rb_prompt(){
+# if $(which rbenv &> /dev/null)
+# then
+#   echo "%{$fg[yellow]%}$(rbenv version | awk '{print $1}')%{$reset_color%}"
+# else
+#   echo "%m"
+# fi
+#}
 
 # This keeps the number of todos always available the right hand side of my
 # command line. I filter it to only count those tagged as "+next", so it's more
@@ -73,7 +73,7 @@ directory_name(){
 }
 
 set_prompt () {
-  export PROMPT=$'\n$(rb_prompt) in $(directory_name) $(git_dirty)$(need_push)\n› '
+  export PROMPT=$'\n%m in $(directory_name) $(git_dirty)$(need_push)\n› '
   export RPROMPT=$'%{$fg_bold[green]%}%~%{$reset_color%}'
 }
 
@@ -81,3 +81,4 @@ precmd() {
   title "zsh" "%m" "%55<...<%~"
   set_prompt
 }
+
