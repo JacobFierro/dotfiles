@@ -38,3 +38,4 @@ alias cindev="cd ~/Documents/Work/cinematique/cinematique-env"
 alias cin="cindev; vact; cd cinematique"
 alias cinsass="cin; ; cd cinematique/static_local/app/css; compass watch ."
 
+alias cinrun="CIN_ENV=jacob node ./bin/app.js"
