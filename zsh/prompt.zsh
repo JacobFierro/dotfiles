@@ -72,8 +72,32 @@ directory_name(){
   echo "%{$fg[cyan]%}%1/%\/%{$reset_color%}"
 }
 
+# modified version of what virtualenv uses to work with this setup
+add_venv_info () {
+    if [ -z "$VIRTUAL_ENV_DISABLE_PROMPT" ] ; then
+        _OLD_VIRTUAL_PS1="$PS1"
+        if [ "x" != x ] ; then
+            # PS1="$PS1"
+            echo ""
+        else
+            if [ "`basename \"$VIRTUAL_ENV\"`" = "__" ] ; then
+                # special case for Aspen magic directories
+                # see http://www.zetadev.com/software/aspen/
+                echo "[`basename \`dirname \"$VIRTUAL_ENV\"\``]"
+                # PS1="[`basename \`dirname \"$VIRTUAL_ENV\"\``] $PS1"
+            elif [ "$VIRTUAL_ENV" != "" ]; then
+                echo "%{$fg[yellow]%}(`basename \"$VIRTUAL_ENV\"`)%{$reset_color%} "
+                # PS1="(`basename \"$VIRTUAL_ENV\"`)$PS1"
+            fi
+        fi
+        echo ""
+        # export PS1
+    fi
+}
+PROMPT_COMMAND="$PROMPT_COMMAND add_venv_info"
+
 set_prompt () {
-  export PROMPT=$'\n%m in $(directory_name) $(git_dirty)$(need_push)\n› '
+  export PROMPT=$'\n$(add_venv_info)%m in $(directory_name) $(git_dirty)$(need_push)\n› '
   export RPROMPT=$'%{$fg_bold[green]%}%~%{$reset_color%}'
 }
 
