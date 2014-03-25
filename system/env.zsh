@@ -19,3 +19,14 @@ export GRAILS_OPTS="-server -Xmx512M -XX:MaxPermSize=512m -Dfile.encoding=UTF-8"
 # aws cli tools require this variable
 # http://docs.aws.amazon.com/AWSEC2/latest/CommandLineReference/set-up-ec2-cli-linux.html
 export JAVA_HOME=$(/usr/libexec/java_home)
+
+# virtualenvwrapper
+# defaulting to /usr/local/python, set the correct path
+export VIRTUALENVWRAPPER_PYTHON="/usr/local/bin/python"
+#export VIRTUALENVWRAPPER_VIRTUALENV=`which virtualenv`
+
+# http://virtualenvwrapper.readthedocs.org/en/latest/install.html#shell-startup-file
+export WORKON_HOME=$HOME/Envs
+export PROJECT_HOME=$HOME/Work
+source /usr/local/bin/virtualenvwrapper.sh
+
