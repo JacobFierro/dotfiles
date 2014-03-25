@@ -12,6 +12,9 @@ export LESS_TERMCAP_md="$ORANGE"
 
 export LESS=-RFX
 
+export SHELL=`which zsh`
+echo `which zsh`
+
 # Set the memory size for java and grails
 export JAVA_OPTS='-XX:MaxPermSize=512m -XX:PermSize=512m -Xms256m -Xmx1024m -XX:-UseGCOverheadLimit'
 export GRAILS_OPTS="-server -Xmx512M -XX:MaxPermSize=512m -Dfile.encoding=UTF-8"
@@ -26,7 +29,7 @@ export VIRTUALENVWRAPPER_PYTHON="/usr/local/bin/python"
 #export VIRTUALENVWRAPPER_VIRTUALENV=`which virtualenv`
 
 # http://virtualenvwrapper.readthedocs.org/en/latest/install.html#shell-startup-file
-export WORKON_HOME=$HOME/Envs
+export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/Work
 source /usr/local/bin/virtualenvwrapper.sh
 
