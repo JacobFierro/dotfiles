@@ -13,7 +13,6 @@ export LESS_TERMCAP_md="$ORANGE"
 export LESS=-RFX
 
 export SHELL=`which zsh`
-echo `which zsh`
 
 # Set the memory size for java and grails
 export JAVA_OPTS='-XX:MaxPermSize=512m -XX:PermSize=512m -Xms256m -Xmx1024m -XX:-UseGCOverheadLimit'
