@@ -32,10 +32,11 @@ alias sails="nocorrect sails"
 alias cinplayer="cd ~/Documents/Work/cinematique/cinematique-player/"
 
 alias vact="source bin/activate"
-alias de="deactivate; cd ~"
+alias de="deactivate;"
 
 alias cindev="cd ~/Documents/Work/cinematique/cinematique-env"
 alias cin="cindev; vact; cd cinematique"
-alias cinsass="cin; ; cd cinematique/static_local/app/css; compass watch ."
+alias cinsass="cin; cd cinematique/static_local/app/css; compass watch ."
 
 alias cinrun="CIN_ENV=jacob node ./bin/app.js"
+alias cinqa="cinplayer; grunt update_server_code:app_qa_instance_1.1.1.1:qa:us-east-1"
