@@ -22,6 +22,10 @@ export GRAILS_OPTS="-server -Xmx512M -XX:MaxPermSize=512m -Dfile.encoding=UTF-8"
 # http://docs.aws.amazon.com/AWSEC2/latest/CommandLineReference/set-up-ec2-cli-linux.html
 export JAVA_HOME=$(/usr/libexec/java_home)
 
+# prevent python from writing .pyc or .pyo on the import of source modules
+# https://docs.python.org/2/using/cmdline.html
+export PYTHONDONTWRITEBYTECODE=1
+
 # virtualenvwrapper
 # defaulting to /usr/local/python, set the correct path
 export VIRTUALENVWRAPPER_PYTHON="/usr/local/bin/python"
