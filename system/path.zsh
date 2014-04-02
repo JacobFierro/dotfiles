@@ -1,4 +1,4 @@
-export PATH="$HOME/bin:./bin:$HOME/.rbenv/shims:/usr/local/bin:/usr/local/sbin:$HOME/.sfs:$ZSH/bin:$HOME/Library/Haskell/bin:/usr/local/mysql/bin:/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
+export PATH="$HOME/bin:./bin:$HOME/.rbenv/shims:/usr/local/bin:/usr/local/sbin:$HOME/.sfs:$ZSH/bin:$HOME/Library/Haskell/bin:/usr/local/bin/mysql:/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
 
 export PATH=${PATH}:$HOME/Documents/Work/adt/sdk/platform-tools:$HOME/Documents/Work/adt/sdk/tools
 
