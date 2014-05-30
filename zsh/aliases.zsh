@@ -40,3 +40,5 @@ alias cinsass="cin; cd cinematique/static_local/app/css; compass watch ."
 
 alias cinrun="CIN_ENV=jacob node ./bin/app.js"
 alias cinqa="cinplayer; grunt update_server_code:app_qa_instance_1.1.1.1:qa:us-east-1"
+
+alias gopim="cd ~/Work2/pimmento"
