@@ -35,10 +35,12 @@ alias vact="source bin/activate"
 alias de="deactivate;"
 
 alias cin="cd ~/Work2/cin/cinematique"
-alias getplayer="cp ~/Work2/cin/mediaelement/local-build/mediaelementplayer.js ~/Work2/cin/cinematique/cinematique/static_local/app/js/lib/mediaelement"
+alias getplayer="cp ~/Work2/cin/mediaelement/local-build/mediaelementplayer.js ~/Work2/cin/cinematique/cin/static_local/app/js/lib/mediaelement"
+alias getplayer2="cp ~/Work2/cin/mediaelement/local-build/mediaelementplayer.js ~/Documents/Work/cinematique/cinematique-player/public/player/js/lib/mediaelement"
 alias cinsass="cin; cd cinematique/static_local/app/css; compass watch ."
 
 alias cinrun="CIN_ENV=jacob node ./bin/app.js"
 alias cinqa="cinplayer; grunt update_server_code:app_qa_instance_1.1.1.1:qa:us-east-1"
+alias cindev="cinplayer; grunt update_server_code:app_dev_server_1.1.9.0:dev:us-east-1"
 
 alias gopim="cd ~/Work2/pimmento"
