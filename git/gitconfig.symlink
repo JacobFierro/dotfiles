@@ -30,7 +30,7 @@
 [github]
 	user = JacobFierro
 [credential]
-	helper = osxkeychain
+	helper = cache 
 [rerere]
 	enabled = 1
 [push]
