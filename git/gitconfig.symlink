@@ -30,7 +30,7 @@
 [github]
 	user = JacobFierro
 [credential]
-	helper = cache 
+	helper = cache --timeout=31557600000
 [rerere]
 	enabled = 1
 [push]
