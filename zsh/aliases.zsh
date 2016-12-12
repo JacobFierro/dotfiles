@@ -23,33 +23,36 @@ alias pumpitup="osascript -e 'set volume 10'"
 alias hax="growlnotify -a 'Activity Monitor' 'System error' -m 'WTF R U DOIN'"
 
 alias editalias="vim ~/.dotfiles/zsh/aliases.zsh"
+alias weather="curl -s http://wttr.in/newyork"
 
 # Some shortcuts to commonly used places
 alias desk="cd ~/Desktop/"
-alias webdocs="cd /Library/WebServer/Documents/"
-alias work="cd ~/Documents/Work/"
+alias work="cd ~/Work2"
 alias repos="cd ~/Repos/"
+alias pimapp="cd ~/Work2/pimmento/pim-web-app"
 
 alias sails="nocorrect sails"
 
 alias vact="source bin/activate"
 alias de="deactivate;"
 
-alias cin="cd ~/Work2/cin/cinematique"
-alias getplayer="cp ~/Work2/cin/mediaelement/local-build/mediaelementplayer.js ~/Work2/cin/cinematique/cin/static_local/app/js/lib/mediaelement && cp ~/Work2/cin/mediaelement/local-build/mediaelement.js ~/Work2/cin/cinematique/cin/static_local/app/js/lib/mediaelement"
-alias getplayer2="cp ~/Work2/cin/mediaelement/local-build/mediaelementplayer.js ~/Documents/Work/cinematique/cinematique-player/public/player/js/lib/mediaelement"
-alias cinsass="cin; cd cinematique/static_local/app/css; compass watch ."
-
-alias cinrun="CIN_ENV=jacob node ./bin/app.js"
-alias cinqa="cinplayer; grunt update_server_code:app_qa_instance_1.1.1.1:qa:us-east-1"
-alias cindev="cinplayer; grunt update_server_code:app_dev_server_1.1.9.0:dev:us-east-1"
+alias kindlecontent="open ~/Library/Containers/com.amazon.Kindle/Data/Library/Application\ Support/Kindle/My\ Kindle\ Content"
 
 alias pim="cd ~/Work2/pimmento && ls"
 
+# quickly made some tmux sessions
 alias pimwebmake="cd ~/Work2/pimmento/pim-web && tmux new -s pim-web"
 alias pimiosmake="cd ~/Work2/pimmento/pim-ios && tmux new -s pim-ios"
-alias pimplatform="cd ~/Work2/pimmento/pim-platform && tmux new -s pim-platform"
 alias pimservice="cd ~/Work2/pimmento/pim-data-access && tmux new -s pim-service"
-alias pimsails="cd ~/Work2/pimmento/pim-sails-test && tmux new -s pim-sails"
-alias pimweb="cd ~/Work2/pimmento/pim-web-app && tmux new -s pim-web-app"
+alias pimcorporate="cd ~/Work2/pimmento/pim-corporate && tmux new -s pim-corporate"
+alias cin="cd ~/Work2/cin"
+alias cinsdk="cd ~/Work2/cin/cin-sdk && tmux a -t cin-sdk"
+alias cindev="env NODE_ENV=development NODE_PORT=3000 npm start"
+alias cin-docker='cd ~/dev/cinematique-sys && docker-machine start dev && eval $(docker-machine env dev) && source ~/dev/cinematique-sys/cin-sys/bin/activate && docker-compose up mysql'
+
+
+# mount and unmount the web app vagrant box
 alias vbmount="sshfs pim:/home/vagrant/pim-web-app /Users/jacobfierro/Work2/pimmento/remotes/pim-web-app"
+alias unmount="umount /Users/jacobfierro/Work2/pimmento/remotes/pim-web-app"
+
+alias notes="cd ~/Work2/notes"
