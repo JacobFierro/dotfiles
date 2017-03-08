@@ -31,8 +31,6 @@ alias work="cd ~/Work2"
 alias repos="cd ~/Repos/"
 alias pimapp="cd ~/Work2/pimmento/pim-web-app"
 
-alias sails="nocorrect sails"
-
 alias vact="source bin/activate"
 alias de="deactivate;"
 
@@ -43,16 +41,12 @@ alias pim="cd ~/Work2/pimmento && ls"
 # quickly made some tmux sessions
 alias pimwebmake="cd ~/Work2/pimmento/pim-web && tmux new -s pim-web"
 alias pimiosmake="cd ~/Work2/pimmento/pim-ios && tmux new -s pim-ios"
-alias pimservice="cd ~/Work2/pimmento/pim-data-access && tmux new -s pim-service"
-alias pimcorporate="cd ~/Work2/pimmento/pim-corporate && tmux new -s pim-corporate"
-alias cin="cd ~/Work2/cin"
-alias cinsdk="cd ~/Work2/cin/cin-sdk && tmux a -t cin-sdk"
-alias cindev="env NODE_ENV=development NODE_PORT=3000 npm start"
 alias cin-docker='cd ~/dev/cinematique-sys && docker-machine start dev && eval $(docker-machine env dev) && source ~/dev/cinematique-sys/cin-sys/bin/activate && docker-compose up mysql'
-
 
 # mount and unmount the web app vagrant box
 alias vbmount="sshfs pim:/home/vagrant/pim-web-app /Users/jacobfierro/Work2/pimmento/remotes/pim-web-app"
 alias unmount="umount /Users/jacobfierro/Work2/pimmento/remotes/pim-web-app"
 
-alias notes="cd ~/Work2/notes"
+alias p2mount="sshfs pim:/home/vagrant/pim2 /Users/jacobfierro/Work2/pimmento/remotes/pim2"
+alias p2unmount="umount /Users/jacobfierro/Work2/pimmento/remotes/pim2"
+
