@@ -35,6 +35,8 @@ Also, to steal directly from [holman](https://github.com/holman):
 - `git clone git://github.com/holman/dotfiles ~/.dotfiles`
 - `cd ~/.dotfiles`
 - `rake install`
+- `brew install zsh`
+- `sudo chsh -s $(which zsh) $(whoami)`
 
 The install rake task will symlink the appropriate files in `.dotfiles` to your
 home directory. Everything is configured and tweaked within `~/.dotfiles`,
