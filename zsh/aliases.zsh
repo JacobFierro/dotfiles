@@ -29,27 +29,10 @@ alias weather="curl -s http://wttr.in/newyork"
 alias desk="cd ~/Desktop/"
 alias work="cd ~/Work"
 alias repos="cd ~/Repos/"
-alias pimapp="cd ~/Work/pimmento/pim-web-app"
 alias g="open-github"
 
 alias vact="source bin/activate"
 alias de="deactivate;"
 
 alias kindlecontent="open ~/Library/Containers/com.amazon.Kindle/Data/Library/Application\ Support/Kindle/My\ Kindle\ Content"
-
-alias pim="cd ~/Work/pimmento && ls"
-
-# quickly made some tmux sessions
-alias cin-docker='cd ~/dev/cinematique-sys && docker-machine start dev && eval $(docker-machine env dev) && source ~/dev/cinematique-sys/cin-sys/bin/activate && docker-compose up mysql'
-
-# mount and unmount the web app vagrant box
-alias pmount="sshfs pim:/home/vagrant/pim-web-app /Users/jacobfierro/Work/pimmento/remotes/pim-web-app"
-alias unmount="umount /Users/jacobfierro/Work/pimmento/remotes/pim-web-app"
-
-alias lemount="sshfs -o credentials=~/.ssh/leftempty_credentials leftempty:/home/jtag05/taiga-front /Users/jacobfierro/Work/new_co/remotes/taiga-front"
-alias ulemnout="unmount /Users/jacobfierro/Work/new_co/remotes/taiga-front"
-
-# run the google cloud datastore emulator
-alias ds_start="gcloud beta emulators datastore start"
-alias ds_env="$(gcloud beta emulators datastore env-init)"
 
